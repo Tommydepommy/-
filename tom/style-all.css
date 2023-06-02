@@ -1,0 +1,152 @@
+:root {
+  --bg: #0f0f0f; /* Hoofdachtergrond */
+  --bg-hd: #000000; /* Achtergrond header */
+  --txt-hd: #ffdddd; /* Lettertype header */
+  --bg-txt: #0f0f0f; /* Achtergrond textbox */
+  --bg-ft: #050505; /* Achtergrond footer */
+  --txt-ft: #ffdddd; /* Lettertype footer */
+  --txt: #ffdddd; /* Lettertype */
+  --txt-link: #378ad8; /* Kleur hyperlink */
+	--bg-st: #c96565; /* Kleur subtitle*/
+}
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Lettertype */
+  background-color: var(--bg); /* Achtergrond */
+  overflow-x: hidden; /* Scrollbar links/rechts */
+  margin: 0; /* Geen rand om het scherm */
+}
+
+header {
+  background-color: var(--bg-hd); /* Achtergrond */
+  color: var(--txt-hd); /* Letterkleur */
+  display: flex; /* Blijft bovenaan */
+  padding: 1%; /* Geen ruimte rondom tekst */
+  align-items: center; /* Tekst wordt gecentreerd */
+  width: 100%;
+}
+
+header h1 {
+  font-size: 64px; /* Lettergrootte */
+  margin: 0; /* Compactere titel */
+	padding-left: 15px ;
+}
+
+section {
+  padding: 10px; /* Ruimte binnen de randen */
+  margin: 2%; /* Geen overlapping */
+  margin-bottom: 2%; /* Geen overlapping */
+  margin-top: 2%; /* Geen overlapping */
+}
+
+#alinia {
+  border-radius: 25px; /* Afgeronde hoeken */
+  background-color: var(--bg-txt); /* Achtergrond textbox */
+}
+
+section h2 {
+  font-size: 24px; /* Groot kopje */
+  color: var(--txt); /* Letterkleur */
+}
+
+section p {
+  font-size: 16px; /* Grote tekst */
+  line-height: 1.4;
+  color: var(--txt); /* Letterkleur */
+}
+
+section a {
+  color: var(--txt-link); /* Kleur hyperlink */
+  text-decoration: none; /* Geen onderlijning */
+  font-style: normal; /* Schuin lettertype */
+}
+
+
+
+footer {
+  background-color: var(--bg-ft); /* Achtergrond footer */
+  color: var(--txt-ft); /* Letterkleur footer */
+  padding: 20px; /* Ruimte tussen rand en tekst */
+  text-align: center; /* Tekst gecentreerd */
+  font-size: 14px; /* Lettergrootte */
+  width: 100%; /* Breedte van het hele scherm */
+  display: flex;
+}
+
+footer p {
+  margin: 0; /* Geen marges */
+}
+
+.dropdown {
+  /* position: sticky; */ /* Positie van de dropdown-container */
+  display: inline-block; /* Weergave als inline-element */
+  z-index: 2;
+}
+
+.dropbtn {
+  padding: 0; /* Ruimte binnen de dropdownknop */
+  font-size: 16px; /* Tekstgrootte dropdownknop */
+  border: none; /* Geen rand om dropdownknop */
+  /* position: fixed; */
+}
+
+.dropdown-content {
+  border-radius: 15px;
+  right: 0;
+  border-radius: 3px;
+  outline: 3px solid white;
+  display: none; /* Verbergt dropdown-inhoud */
+  position: absolute; /* Positie dropdown-inhoud */
+  background-color: #bc1a1a; /* Achtergrondkleur dropdown-inhoud */
+  min-width: 160px; /* Minimale breedte dropdown-inhoud */
+  /* z-index: 1; */ /* Stapelvolgorde dropdown-inhoud */
+  top: 52px;
+}
+
+.dropdown-content a {
+  color: black; /* Tekstkleur dropdown-opties */
+  padding: 12px 16px; /* Ruimte binnen dropdown-opties */
+  text-decoration: none; /* Geen onderlijning */
+  display: block; /* Weergave als blokelementen */
+  position: relative;
+}
+
+.dropdown-content a:hover {
+  background-color: #b31111; /* Achtergrondkleur bij hover */
+  border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  top: 80px;
+  right: 14;
+  display: inline; /* Toont dropdown-inhoud bij hover */
+  z-index: 88;
+}
+
+.subtitle {
+	font-size: 18px;
+  color: var(--txt-hd);
+  text-align: center;
+  padding: 1px;
+  background-color: var(--bg-st);
+	position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#copyPassword,
+#password,
+#input-button,
+#urlInput {
+  padding: 5px;
+  font-size: 16px;
+  border:3px solid var(--bg-st);
+  background-color: var(--txt-hd);
+  border-radius: 15px;
+  color: var(--bg);
+}
+
