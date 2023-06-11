@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tommydepommy</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+	<link href="style-all.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="images/logo.ico">
+</head>
+<body style="background-color:black;">
+	<header> <!-- HEADER -->
+		<a name="home"> <!-- dropdownmenu naam -->
+		<h1><img src="images/logo.png"> Tommydepommy</h1>
+	</header> <!-- HEADER -->
+	<main>
+		<a name="algemeen"> <!-- dropdownmenu naam -->
+		<section>
+			<div class="subtitle">
+				<h2>Tom's dingetjes</h2>
+				<p>gewoon voor de fun 😀</p>
+			</div>
+			<section id="alinia">
+				<h2>Wachtwoorden</h2>
+				<p>
+					Wachtwoorden. Yep die dingen om inteloggen. Het is belangrijk om een goed wachtwoord te hebben. Maar het is ook belangrijk om niet teveel de zelfde wachtwoorden te hebben. Want als je er een weet, weet je ze allemaal. Daarom heb ik een Generator gemaakt die "redelijk" makkelijk, en goede, wachtwoorden maakt. Je wachtwoorden op een veilige plek opslaan is ook wel handig. vooral met veel verschillende wachtenwoorden.</p>
+					<a href="https://marcosiris.github.io/links/tech-tips/productiviteit.html" target="_blank">Mark heeft hier bitwarden aangeraadt (staat ongeveer in het midden)</a>
+				<h2>Generator</h2>
+				<p>
+					<div id="app">
+						<input id="interact" type="text" class="interact urlInput" placeholder="Website URL">
+						<button id="interact" class="interact input-button" onclick="generatePassword()">Generate Password</button>
+						<p><span id="interact" class="interact password"></span><button id="interact" class="interact copyPassword" onclick="copyPassword()">Copy</button></p>						
+					</div>					
+				</p>
+			</section>
+			<section id="alinia">
+				<h2>Quick acces</h2>
+				<p>
+					Dit is een test voor Quick acces dingen. Deze tekst werdt gebruik in het verleden maar heeft nu geen nut maar ik laat het er staan. Ik ga van een ander project ideeën lenen.
+				</p>
+				<p>
+					<div id="app">
+						<input id="interact" class="searchInput" type="text" placeholder="Search">
+						<button id="interact" class="googleButton interact" onclick="searchGoogle()"><img style="height: 15px;" src="images/quick/images/google_logo.png" alt="Google"></button>
+						<button id="interact" class="duckduckgoButton interact" onclick="searchDuckduckgo()"><img style="height: 15px;" src="images/quick/images/duckduckgo_logo.png" alt="DuckDuckGo"></button>
+						<button id="interact" class="wikipediaButton interact" onclick="searchWikipedia()"><img style="height: 15px;" src="images/quick/images/wikipedia_logo.png" alt="Wikipedia"></button>
+						<button id="interact" class="archwikiButton interact" onclick="searchArchwiki()"><img style="height: 15px;" src="images/quick/images/arch_logo.png" alt="Arch Wiki"></button>
+					</div>
+				</p>
+			</section>
+		</section>
+	</main>
+	<footer> <!-- FOOTER -->
+		<p>No-copyright ⊗ 2023</p>
+	</footer> <!-- FOOTER -->
+	<script src="scripts.js"></script>
+</body>
+</html>
